@@ -23,39 +23,41 @@ async def index():
 
 
     with ui.element('div').style('position: relative; display: inline; margin-bottom: 10vh'):
-        with ui.element('div').style('position: relative; display: inline-block; margin-left: 22.5vw;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
-            im = ui.interactive_image(data[0][2], on_mouse=lambda e: mouse_click(e,0), events=["mousedown"]).classes('w-64 h-64 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
-            ui.label(data[0][0]).style("font-size:45px; text-align: center;")
+        with ui.element('div').style('position: relative; display: inline-block; margin-left: 30px;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
+            im = ui.interactive_image(data[0][2], on_mouse=lambda e: mouse_click(e,0), events=["mousedown"]).classes('w-32 h-32 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
+            ui.label(data[0][0]).style("font-size:25px; text-align: center;")
 
-        with ui.element('div').style('position: relative; display: inline-block; margin-left: 22.5vw;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
-            im = ui.interactive_image(data[1][2], on_mouse=lambda e: mouse_click(e, 1), events=["mousedown"]).classes('w-64 h-64 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
-            ui.label(data[1][0]).style("font-size:45px; text-align: center;")
-
-    with ui.element('div').style('position: relative; display: inline; margin-bottom: 10vh'):
-        with ui.element('div').style('position: relative; display: inline-block; margin-left: 22.5vw;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
-            im = ui.interactive_image(data[2][2], on_mouse=lambda e: mouse_click(e, 2), events=["mousedown"]).classes('w-64 h-64 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
-            ui.label(data[2][0]).style("font-size:45px; text-align: center;")
-
-        with ui.element('div').style('position: relative; display: inline-block; margin-left: 22.5vw;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
-            im = ui.interactive_image(data[3][2], on_mouse=lambda e: mouse_click(e, 3), events=["mousedown"]).classes('w-64 h-64 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
-            ui.label(data[3][0]).style("font-size:45px; text-align: center;")
-
+        with ui.element('div').style('position: relative; display: inline-block; margin-left: 30px;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
+            im = ui.interactive_image(data[1][2], on_mouse=lambda e: mouse_click(e, 1), events=["mousedown"]).classes('w-32 h-32 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
+            ui.label(data[1][0]).style("font-size:25px; text-align: center;")
 
     with ui.element('div').style('position: relative; display: inline; margin-bottom: 10vh'):
-        with ui.element('div').style('position: relative; display: inline-block; margin-left: 22.5vw;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
-            im = ui.interactive_image(data[4][2], on_mouse=lambda e: mouse_click(e, 4), events=["mousedown"]).classes('w-64 h-64 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
-            ui.label(data[4][0]).style("font-size:45px; text-align: center;")
+        with ui.element('div').style('position: relative; display: inline-block; margin-left: 30px;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
+            im = ui.interactive_image(data[2][2], on_mouse=lambda e: mouse_click(e, 2), events=["mousedown"]).classes('w-32 h-32 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
+            ui.label(data[2][0]).style("font-size:25px; text-align: center;")
 
-        with ui.element('div').style('position: relative; display: inline-block; margin-left: 22.5vw;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
-            im = ui.interactive_image(data[5][2], on_mouse=lambda e: mouse_click(e, 5), events=["mousedown"]).classes('w-64 h-64 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
-            ui.label(data[5][0]).style("font-size:45px; text-align: center;")
+        with ui.element('div').style('position: relative; display: inline-block; margin-left: 30px;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
+            im = ui.interactive_image(data[3][2], on_mouse=lambda e: mouse_click(e, 3), events=["mousedown"]).classes('w-32 h-32 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
+            ui.label(data[3][0]).style("font-size:25px; text-align: center;")
+
+
+    with ui.element('div').style('position: relative; display: inline; margin-bottom: 10vh'):
+        with ui.element('div').style('position: relative; display: inline-block; margin-left: 30px;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
+            im = ui.interactive_image(data[4][2], on_mouse=lambda e: mouse_click(e, 4), events=["mousedown"]).classes('w-32 h-32 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
+            ui.label(data[4][0]).style("font-size:25px; text-align: center;")
+
+        with ui.element('div').style('position: relative; display: inline-block; margin-left: 30px;').classes('bg-gray-900 rounded-lg border-2 border-white p-4') as image_container:
+            im = ui.interactive_image(data[5][2], on_mouse=lambda e: mouse_click(e, 5), events=["mousedown"]).classes('w-32 h-32 object-cover rounded-xl shadow-lg border border-white/10').style("left: center")
+            ui.label(data[5][0]).style("font-size:25px; text-align: center;")
 
 @ui.page("/{val}")
 async def desription(val):
     with ui.element("div").style("display: flex; justify-content: center; align-items: center"):
-        with ui.element('div').style('position: relative; display: inline-block; min-width: 98.4vw;').classes('bg-gray-900 rounded-lg border-2 border-white p-10') as image_container:
-            ui.image(data[int(val)][2]).classes('w-64 h-64')
-            ui.label(data[int(val)][0]).style("font-size:45px")
+        with ui.element('div').style('position: relative; display: inline-block; min-width: 95vw;').classes('bg-gray-900 rounded-lg border-2 border-white p-10') as image_container:
+            ui.image(data[int(val)][2]).classes('w-60 h-60')
+            ui.label(" ").style("font-size:45px").classes("font-bold")
+            ui.label(data[int(val)][0]).style("font-size:45px").classes("font-bold")
+            ui.label(" ").style("font-size:45px").classes("font-bold")
             ui.label(data[int(val)][1]).style("font-size:25px")
         
 
