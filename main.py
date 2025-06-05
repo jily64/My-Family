@@ -1,8 +1,4 @@
-from nicegui import events, ui
-
-image_url = 'https://i.pinimg.com/originals/f1/4f/d9/f14fd9f2408fc8e6135b921e551baaac.jpg'
-
-#ui.body("display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0;  ")
+from nicegui import ui
 
 data = [
     ["Сестра", "Моя младшая сестра Ульяна, родилась 29 Января 2013 года, любит помогать маме и убирается по дому, добрая и позитивная.", "https://masterpiecer-images.s3.yandex.net/2bd3b9e6331711ee83f66ee9ab557742:upscaled"],
